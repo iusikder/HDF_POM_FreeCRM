@@ -55,10 +55,11 @@ import com.relevantcodes.extentreports.LogStatus;
 		static {
 			Calendar calendar = Calendar.getInstance();
 			SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
-			extent = new ExtentReports(System.getProperty("user.dir") + "/src/main/java/com/crm/qa/report/test" + formater.format(calendar.getTime()) + ".html", false);
-			//extent = new ExtentReports(System.getProperty("user.dir") + "/src/main/java/com/crm/qa/report/test");
+			//reporter =new ExtentHtmlReporter("./Reports/learn_automation.html");
+			extent = new ExtentReports("./src/main/java/com/crm/qa/report/test" + formater.format(calendar.getTime()) + ".html", false);
+
+			//extent = new ExtentReports(System.getProperty("user.dir") + "/src/main/java/com/crm/qa/report/test" + formater.format(calendar.getTime()) + ".html", false);
 		}
-		
 
 		
 		///////////////////////////////
@@ -115,11 +116,13 @@ import com.relevantcodes.extentreports.LogStatus;
 		
 		//Taking Screenshot
 		public String getScreenShot(String imageName) throws IOException{			
-		/*	if(imageName.equals("")){
+			if(imageName.equals("")){
 				imageName = "blank";
-			}*/
+			}
 			File image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			String imagelocation = System.getProperty("user.dir") + "/src/main/java/com/crm/qa/screenshot/";
+			//String imagelocation = "./src/main/java/com/crm/qa/screenshot/";		
+			
+				String imagelocation = System.getProperty("user.dir") + "/src/main/java/com/crm/qa/screenshot/";
 			Calendar calendar = Calendar.getInstance();
 			SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 			String actualImageName = imagelocation+imageName+"_"+formater.format(calendar.getTime())+".png";
