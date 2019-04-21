@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Free CRM Test Automation Suite]">
-  <test thread-count="5" name="Free CRM App Test Cases(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.ContactsPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="afterMethod"/>
-          <include name="selectMultipleContactsTest"/>
-          <include name="endTest"/>
-          <include name="validateCreateNewContact" invocation-numbers="0 1 2"/>
-          <include name="selectSingleContactsTest"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
       <class name="com.crm.qa.testcases.LoginPageTest">
         <methods>
           <include name="setUp"/>
@@ -22,5 +12,5 @@
         </methods>
       </class> <!-- com.crm.qa.testcases.LoginPageTest -->
     </classes>
-  </test> <!-- Free CRM App Test Cases(failed) -->
-</suite> <!-- Failed suite [Free CRM Test Automation Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

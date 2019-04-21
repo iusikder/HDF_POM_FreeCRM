@@ -1,6 +1,7 @@
 package com.crm.qa.testcases;
 
 import java.io.IOException;
+import java.lang.reflect.Method;
 
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -23,17 +24,17 @@ public class LoginPageTest extends BaseTest {
 	
 	
 	@BeforeMethod
-	public void setUp(java.lang.reflect.Method result) {
+	public void setUp(Method result) {
 		test = extent.startTest(result.getName());////ER
-		test.log(LogStatus.INFO, result.getName() + " test Started");///////ER
+		test.log(LogStatus.INFO, result.getName()+ "test Started");///////ER
 		initialization();			
 		loginPage = new LoginPage();
 	}
 	
-	@Test(priority=1)
+	@Test()
 	public void loginPageTitleTest(){
 		String title = loginPage.validateLoginPageTitle();
-		Assert.assertEquals(title, "#1 Free CRM software in the cloud for sales and service");
+		Assert.assertEquals(title, "#1 Free CRM software in the cloud for sales and service00");
 	}
 	
 

@@ -26,7 +26,7 @@ public class DealsPageTest extends BaseTest{
 	
 	@BeforeMethod
 	public void setUp() throws Exception{
-		
+		//REPORT NOT INCLUDED
 		initialization();
 		loginPage = new LoginPage();   //Initializatin of LoginPage
 		testUtil = new TestUtil();

@@ -9,7 +9,7 @@
           <include name="afterMethod"/>
           <include name="selectMultipleContactsTest"/>
           <include name="endTest"/>
-          <include name="validateCreateNewContact" invocation-numbers="0 1 2"/>
+          <include name="validateCreateNewContact" invocation-numbers="0 1"/>
           <include name="selectSingleContactsTest"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.ContactsPageTest -->

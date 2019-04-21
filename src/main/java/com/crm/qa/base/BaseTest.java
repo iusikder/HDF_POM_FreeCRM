@@ -42,7 +42,6 @@ import com.relevantcodes.extentreports.LogStatus;
 				prop = new Properties();
 				//FileInputStream ip = new FileInputStream("/Proj_FreeCRMTest/src/main/java/com/crm/config/config.properties");
 				FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/crm/qa/config/config.properties");
-																			
 				prop.load(ip);
 			}catch(FileNotFoundException e){
 				e.printStackTrace();
@@ -57,6 +56,7 @@ import com.relevantcodes.extentreports.LogStatus;
 			Calendar calendar = Calendar.getInstance();
 			SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 			extent = new ExtentReports(System.getProperty("user.dir") + "/src/main/java/com/crm/qa/report/test" + formater.format(calendar.getTime()) + ".html", false);
+			//extent = new ExtentReports(System.getProperty("user.dir") + "/src/main/java/com/crm/qa/report/test");
 		}
 		
 
@@ -110,11 +110,14 @@ import com.relevantcodes.extentreports.LogStatus;
 		//System.getProperty("user.dir")+"/src/main/java/com/hybridFramework/report/test" + formater.format(calendar.getTime()) + ".html", false);
 		//System.getProperty("user.dir")+"/src/main/java/com/hybridFramework/screenshot/";
 		
+		
+		
+		
 		//Taking Screenshot
 		public String getScreenShot(String imageName) throws IOException{			
-			if(imageName.equals("")){
+		/*	if(imageName.equals("")){
 				imageName = "blank";
-			}
+			}*/
 			File image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			String imagelocation = System.getProperty("user.dir") + "/src/main/java/com/crm/qa/screenshot/";
 			Calendar calendar = Calendar.getInstance();
@@ -122,7 +125,7 @@ import com.relevantcodes.extentreports.LogStatus;
 			String actualImageName = imagelocation+imageName+"_"+formater.format(calendar.getTime())+".png";
 			File destFile = new File(actualImageName);
 			FileUtils.copyFile(image, destFile);
-			return actualImageName;
+		return actualImageName;
 	}
 		
 		public void getresult(ITestResult result) throws IOException {

@@ -2,6 +2,7 @@ package com.crm.qa.testcases;
 
 
 import java.io.IOException;
+import java.lang.reflect.Method;
 
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -28,7 +29,7 @@ public class HomePageTest extends BaseTest{
 	
 	
 	@BeforeMethod
-	public void setUp(java.lang.reflect.Method result) throws Exception{
+	public void setUp(Method result) throws Exception{
 		test = extent.startTest(result.getName());////ER
 		test.log(LogStatus.INFO, result.getName() + " test Started");///////ER
 		initialization();
