@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="95458" started-at="2019-04-22T00:10:02Z" finished-at="2019-04-22T00:11:37Z">
+  <suite name="Default suite" duration-ms="130565" started-at="2019-04-22T02:04:30Z" finished-at="2019-04-22T02:06:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="95458" started-at="2019-04-22T00:10:02Z" finished-at="2019-04-22T00:11:37Z">
+    <test name="Default test" duration-ms="130565" started-at="2019-04-22T02:04:30Z" finished-at="2019-04-22T02:06:40Z">
       <class name="com.crm.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="setUp" is-config="true" duration-ms="21379" started-at="2019-04-22T00:10:02Z" finished-at="2019-04-22T00:10:23Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="setUp" is-config="true" duration-ms="45317" started-at="2019-04-22T02:04:30Z" finished-at="2019-04-22T02:05:15Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="loginPageTitleTest" duration-ms="45" started-at="2019-04-22T00:10:23Z" finished-at="2019-04-22T00:10:23Z">
+        <test-method status="FAIL" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="loginPageTitleTest" duration-ms="50" started-at="2019-04-22T02:05:15Z" finished-at="2019-04-22T02:05:15Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [#1 Free CRM software in the cloud for sales and service00] but found [CRMPRO - CRM software for customer relationship management, sales, and support.]]]>
@@ -63,7 +63,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="afterMethod" is-config="true" duration-ms="528" started-at="2019-04-22T00:10:23Z" finished-at="2019-04-22T00:10:24Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="afterMethod" is-config="true" duration-ms="673" started-at="2019-04-22T02:05:15Z" finished-at="2019-04-22T02:05:16Z">
           <params>
             <param index="0">
               <value>
@@ -74,7 +74,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="setUp" is-config="true" duration-ms="23341" started-at="2019-04-22T00:10:24Z" finished-at="2019-04-22T00:10:47Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="setUp" is-config="true" duration-ms="28697" started-at="2019-04-22T02:05:16Z" finished-at="2019-04-22T02:05:45Z">
           <params>
             <param index="0">
               <value>
@@ -85,11 +85,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="crmLogoImgTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="crmLogoImgTest" duration-ms="113" started-at="2019-04-22T00:10:47Z" finished-at="2019-04-22T00:10:47Z">
+        <test-method status="PASS" signature="crmLogoImgTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="crmLogoImgTest" duration-ms="98" started-at="2019-04-22T02:05:45Z" finished-at="2019-04-22T02:05:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- crmLogoImgTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-04-22T00:10:47Z" finished-at="2019-04-22T00:10:47Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="afterMethod" is-config="true" duration-ms="2" started-at="2019-04-22T02:05:45Z" finished-at="2019-04-22T02:05:45Z">
           <params>
             <param index="0">
               <value>
@@ -100,7 +100,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="setUp" is-config="true" duration-ms="29122" started-at="2019-04-22T00:10:47Z" finished-at="2019-04-22T00:11:17Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="setUp" is-config="true" duration-ms="35342" started-at="2019-04-22T02:05:45Z" finished-at="2019-04-22T02:06:20Z">
           <params>
             <param index="0">
               <value>
@@ -111,11 +111,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="loginTest" duration-ms="20157" started-at="2019-04-22T00:11:17Z" finished-at="2019-04-22T00:11:37Z">
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="loginTest" duration-ms="19728" started-at="2019-04-22T02:06:20Z" finished-at="2019-04-22T02:06:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-04-22T00:11:37Z" finished-at="2019-04-22T00:11:37Z">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="endTest" is-config="true" duration-ms="573" started-at="2019-04-22T02:06:40Z" finished-at="2019-04-22T02:06:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-22T02:06:40Z" finished-at="2019-04-22T02:06:40Z">
           <params>
             <param index="0">
               <value>
@@ -126,10 +130,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="endTest" is-config="true" duration-ms="710" started-at="2019-04-22T00:11:37Z" finished-at="2019-04-22T00:11:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
       </class> <!-- com.crm.qa.testcases.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -61,7 +61,7 @@ import com.relevantcodes.extentreports.LogStatus;
 			
 			//Code below is working good
 			//extent = new ExtentReports(System.getProperty("user.dir")+ "./Reports/Extent_Report/test" + formater.format(calendar.getTime()) + ".html");
-			extent = new ExtentReports(System.getProperty("user.dir")+ "./Reports/Extent_Report/test");
+			extent = new ExtentReports(System.getProperty("user.dir")+ "./Reports/Extent_Report/test.html");
 				
 		}
 
