@@ -35,7 +35,7 @@ import com.relevantcodes.extentreports.LogStatus;
 		public static ExtentTest test;
 		public ITestResult result;
 		
-		//String concatenate = ".";
+		String concatenate = ".";
 		///////////////////
 		
 		public BaseTest(){    //Constructor of BaseTest Class to Initialize the Properties file.
@@ -61,7 +61,7 @@ import com.relevantcodes.extentreports.LogStatus;
 			
 			//Code below is working good
 			//extent = new ExtentReports(System.getProperty("user.dir")+ "./Reports/Extent_Report/test" + formater.format(calendar.getTime()) + ".html");
-			extent = new ExtentReports(System.getProperty("user.dir")+ "./Reports/Extent_Report.html");
+			extent = new ExtentReports(System.getProperty("user.dir") + "./Reports/Extent_Report/test.html");
 				
 		}
 
@@ -96,44 +96,27 @@ import com.relevantcodes.extentreports.LogStatus;
 		}
 		
 		///////////////////////
-//		
-//		//This Screenshot is different from other screenshot which I have used before... 
+	
+		
+		
 //		//Taking Screenshot
-//		public static void takeScreenshotAtEndOfTest() throws IOException{
-//			File scrFile =((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//			String currentDir = System.getProperty("user.dir");
-//		
-//			//String filePath=com.pom.util.Constants.REPORT_PATH+"screenshots//"+screenshotFile; //I added this line to test
-//			//	if(osName.startsWith("Mac")){  //If I'm using Mac then I have to do like this
-//				FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
-//			//}
-//			//else{
-//				//FileUtils.copyFile(scrFile, new File(currentDir + "\\screenshots\\" + System.currentTimeMillis() + ".png"));
-//			}
-		
-		////////////////////////
-		//System.getProperty("user.dir")+"/src/main/java/com/hybridFramework/report/test" + formater.format(calendar.getTime()) + ".html", false);
-		//System.getProperty("user.dir")+"/src/main/java/com/hybridFramework/screenshot/";
-		
-		
-		
-		
-		//Taking Screenshot
 		public String getScreenShot(String imageName) throws IOException{			
 			if(imageName.equals("")){
 				imageName = "blank";
 			}
 			File image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			
+			//Here I am writing the new Destination code
 			String imagelocation= System.getProperty("user.dir")+ "./Reports/Screenshots.png";
-			//String imagelocation = System.getProperty("user.dir") + "/src/main/java/com/crm/qa/screenshot/";
-			Calendar calendar = Calendar.getInstance();
-			SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
+		//String imagelocation = System.getProperty("user.dir") + "/src/main/java/com/crm/qa/screenshot/";
+		Calendar calendar = Calendar.getInstance();
+		SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 			String actualImageName = imagelocation+imageName+"_"+formater.format(calendar.getTime())+".png";
 			File destFile = new File(actualImageName);
 			FileUtils.copyFile(image, destFile);
-		return actualImageName;
+	return actualImageName;
 		}
+		
+		
 		
 //		public void passFailScreenshot(String name) throws IOException{
 //			String screenshotName = getScreenShot(name);
