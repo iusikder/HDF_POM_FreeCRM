@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Free CRM Test Automation Suite" duration-ms="44283" started-at="2019-04-21T05:17:51Z" finished-at="2019-04-21T05:18:35Z">
+  <suite name="Default suite" duration-ms="95458" started-at="2019-04-22T00:10:02Z" finished-at="2019-04-22T00:11:37Z">
     <groups>
     </groups>
-    <test name="Free CRM App Test Cases" duration-ms="44283" started-at="2019-04-21T05:17:51Z" finished-at="2019-04-21T05:18:35Z">
+    <test name="Default test" duration-ms="95458" started-at="2019-04-22T00:10:02Z" finished-at="2019-04-22T00:11:37Z">
       <class name="com.crm.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="setUp" is-config="true" duration-ms="11237" started-at="2019-04-21T05:17:51Z" finished-at="2019-04-21T05:18:02Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="setUp" is-config="true" duration-ms="21379" started-at="2019-04-22T00:10:02Z" finished-at="2019-04-22T00:10:23Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="loginPageTitleTest()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="loginPageTitleTest" duration-ms="40" started-at="2019-04-21T05:18:02Z" finished-at="2019-04-21T05:18:02Z">
+        <test-method status="FAIL" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="loginPageTitleTest" duration-ms="45" started-at="2019-04-22T00:10:23Z" finished-at="2019-04-22T00:10:23Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [#1 Free CRM software in the cloud for sales and service00] but found [CRMPRO - CRM software for customer relationship management, sales, and support.]]]>
@@ -63,18 +63,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="afterMethod" is-config="true" duration-ms="587" started-at="2019-04-21T05:18:02Z" finished-at="2019-04-21T05:18:03Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="afterMethod" is-config="true" duration-ms="528" started-at="2019-04-22T00:10:23Z" finished-at="2019-04-22T00:10:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginPageTitleTest status=FAILURE method=LoginPageTest.loginPageTitleTest()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9] output={null}]]]>
+                <![CDATA[[TestResult name=loginPageTitleTest status=FAILURE method=LoginPageTest.loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="setUp" is-config="true" duration-ms="10339" started-at="2019-04-21T05:18:03Z" finished-at="2019-04-21T05:18:13Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="setUp" is-config="true" duration-ms="23341" started-at="2019-04-22T00:10:24Z" finished-at="2019-04-22T00:10:47Z">
           <params>
             <param index="0">
               <value>
@@ -85,11 +85,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="crmLogoImgTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="crmLogoImgTest" duration-ms="57" started-at="2019-04-21T05:18:13Z" finished-at="2019-04-21T05:18:13Z">
+        <test-method status="PASS" signature="crmLogoImgTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="crmLogoImgTest" duration-ms="113" started-at="2019-04-22T00:10:47Z" finished-at="2019-04-22T00:10:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- crmLogoImgTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-21T05:18:13Z" finished-at="2019-04-21T05:18:13Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-04-22T00:10:47Z" finished-at="2019-04-22T00:10:47Z">
           <params>
             <param index="0">
               <value>
@@ -100,7 +100,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="setUp" is-config="true" duration-ms="10912" started-at="2019-04-21T05:18:13Z" finished-at="2019-04-21T05:18:24Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="setUp" is-config="true" duration-ms="29122" started-at="2019-04-22T00:10:47Z" finished-at="2019-04-22T00:11:17Z">
           <params>
             <param index="0">
               <value>
@@ -111,11 +111,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="loginTest" duration-ms="10608" started-at="2019-04-21T05:18:24Z" finished-at="2019-04-21T05:18:35Z">
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="loginTest" duration-ms="20157" started-at="2019-04-22T00:11:17Z" finished-at="2019-04-22T00:11:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-21T05:18:35Z" finished-at="2019-04-21T05:18:35Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-04-22T00:11:37Z" finished-at="2019-04-22T00:11:37Z">
           <params>
             <param index="0">
               <value>
@@ -126,11 +126,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="endTest" is-config="true" duration-ms="457" started-at="2019-04-21T05:18:35Z" finished-at="2019-04-21T05:18:35Z">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5ad851c9]" name="endTest" is-config="true" duration-ms="710" started-at="2019-04-22T00:11:37Z" finished-at="2019-04-22T00:11:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
       </class> <!-- com.crm.qa.testcases.LoginPageTest -->
-    </test> <!-- Free CRM App Test Cases -->
-  </suite> <!-- Free CRM Test Automation Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

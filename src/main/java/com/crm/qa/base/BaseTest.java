@@ -27,6 +27,8 @@ import com.relevantcodes.extentreports.LogStatus;
 
 	public class BaseTest {			
 	
+		private static final String MediaEntityBuilder = null;
+		private static final String MediaEntityBuilde = null;
 		public static WebDriver driver;
 		public static Properties prop;
 		public static EventFiringWebDriver e_driver;
@@ -35,6 +37,8 @@ import com.relevantcodes.extentreports.LogStatus;
 		public static ExtentReports extent;
 		public static ExtentTest test;
 		public ITestResult result;
+		
+		String concatenate = ".";
 		///////////////////
 		
 		public BaseTest(){    //Constructor of BaseTest Class to Initialize the Properties file.
@@ -52,15 +56,16 @@ import com.relevantcodes.extentreports.LogStatus;
 		
 		///////////////////////////////
 				
-		static {
-			Calendar calendar = Calendar.getInstance();
-			SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
+		static {		
+			//Calendar calendar = Calendar.getInstance();
+			//SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 			//reporter =new ExtentHtmlReporter("./Reports/learn_automation.html");
 			//extent = new ExtentReports("./src/main/java/com/crm/qa/report/test" + formater.format(calendar.getTime()) + ".html", false);
-			//extent = new ExtentReports(System.getProperty("user.dir") + "/src/main/java/com/crm/qa/report/test" + formater.format(calendar.getTime()) + ".html", false);
-		
-			extent = new ExtentReports("./src/main/java/com/crm/qa/report/test.html");
-
+			
+			//Code below is working good
+			//extent = new ExtentReports(System.getProperty("user.dir")+ "./Reports/Extent_Report/test" + formater.format(calendar.getTime()) + ".html");
+			extent = new ExtentReports(System.getProperty("user.dir")+ "./Reports/Extent_Report/test.html");
+				
 		}
 
 		
@@ -122,16 +127,24 @@ import com.relevantcodes.extentreports.LogStatus;
 				imageName = "blank";
 			}
 			File image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			//String imagelocation = "./src/main/java/com/crm/qa/screenshot/";		
 			
-				String imagelocation = System.getProperty("user.dir") + "/src/main/java/com/crm/qa/screenshot/";
+			String imagelocation= System.getProperty("user.dir")+ "./Reports/Screenshots/";
+			//String imagelocation = System.getProperty("user.dir") + "/src/main/java/com/crm/qa/screenshot/";
 			Calendar calendar = Calendar.getInstance();
 			SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 			String actualImageName = imagelocation+imageName+"_"+formater.format(calendar.getTime())+".png";
 			File destFile = new File(actualImageName);
 			FileUtils.copyFile(image, destFile);
 		return actualImageName;
-	}
+		}
+		
+//		public void passFailScreenshot(String name) throws IOException{
+//			String screenshotName = getScreenShot(name);
+//			getresult(result);
+//		}
+//		
+		
+		//I included name as Parameter, if it is not working then I will delete it....
 		
 		public void getresult(ITestResult result) throws IOException {
 			if (result.getStatus() == ITestResult.SUCCESS) {
@@ -155,5 +168,12 @@ import com.relevantcodes.extentreports.LogStatus;
 			extent.endTest(test);
 			extent.flush();
 	}
+		
+		/*public static Object screenCapture(String logdetails, String imagePath){
+			//Report with Screenshot
+			test.log(LogStatus.INFO,logdetails, MediaEntityBuilder.compareToIgnoreCase(String)reateScreenCaptureFromPath(imagePath).build());
+			return test;
+		}*/
+		
 		
 	}
