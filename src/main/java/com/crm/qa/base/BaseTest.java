@@ -25,10 +25,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 
-	public class BaseTest {			
-	
-		private static final String MediaEntityBuilder = null;
-		private static final String MediaEntityBuilde = null;
+	public class BaseTest {		
 		public static WebDriver driver;
 		public static Properties prop;
 		public static EventFiringWebDriver e_driver;
@@ -38,7 +35,7 @@ import com.relevantcodes.extentreports.LogStatus;
 		public static ExtentTest test;
 		public ITestResult result;
 		
-		String concatenate = ".";
+		//String concatenate = ".";
 		///////////////////
 		
 		public BaseTest(){    //Constructor of BaseTest Class to Initialize the Properties file.
@@ -64,7 +61,7 @@ import com.relevantcodes.extentreports.LogStatus;
 			
 			//Code below is working good
 			//extent = new ExtentReports(System.getProperty("user.dir")+ "./Reports/Extent_Report/test" + formater.format(calendar.getTime()) + ".html");
-			extent = new ExtentReports(System.getProperty("user.dir")+ "./Reports/Extent_Report/test.html");
+			extent = new ExtentReports(System.getProperty("user.dir")+ "./Reports/Extent_Report/test");
 				
 		}
 
