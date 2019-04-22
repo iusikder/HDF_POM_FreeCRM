@@ -61,7 +61,7 @@ import com.relevantcodes.extentreports.LogStatus;
 			
 			//Code below is working good
 			//extent = new ExtentReports(System.getProperty("user.dir")+ "./Reports/Extent_Report/test" + formater.format(calendar.getTime()) + ".html");
-			extent = new ExtentReports(System.getProperty("user.dir")+ "./Reports/Extent_Report/test.html");
+			extent = new ExtentReports(System.getProperty("user.dir")+ "./Reports/Extent_Report.html");
 				
 		}
 
@@ -125,7 +125,7 @@ import com.relevantcodes.extentreports.LogStatus;
 			}
 			File image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			
-			String imagelocation= System.getProperty("user.dir")+ "./Reports/Screenshots/";
+			String imagelocation= System.getProperty("user.dir")+ "./Reports/Screenshots.png";
 			//String imagelocation = System.getProperty("user.dir") + "/src/main/java/com/crm/qa/screenshot/";
 			Calendar calendar = Calendar.getInstance();
 			SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
