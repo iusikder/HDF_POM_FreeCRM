@@ -101,11 +101,10 @@ import com.relevantcodes.extentreports.LogStatus;
 		
 //		//Taking Screenshot
 		public String getScreenShot(String imageName) throws IOException{			
-			if(imageName.equals("")){
-				imageName = "blank";
-			}
+			//if(imageName.equals("")){
+				//imageName = "blank";
+			//}
 			File image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			//Here I am writing the new Destination code
 			String imagelocation= System.getProperty("user.dir")+ "./Reports/Screenshots.png";
 		//String imagelocation = System.getProperty("user.dir") + "/src/main/java/com/crm/qa/screenshot/";
 		Calendar calendar = Calendar.getInstance();
@@ -134,7 +133,7 @@ import com.relevantcodes.extentreports.LogStatus;
 				test.log(LogStatus.SKIP, result.getName() + " test is skipped and skip reason is:-" + result.getThrowable());
 			} else if (result.getStatus() == ITestResult.FAILURE) {
 				test.log(LogStatus.FAIL, result.getName() + " test is failed" + result.getThrowable());
-				String screen = getScreenShot("");
+				String screen = concatenate + getScreenShot("blank");// i added blank////////
 				test.log(LogStatus.FAIL, test.addScreenCapture(screen));
 			} else if (result.getStatus() == ITestResult.STARTED) {
 				test.log(LogStatus.INFO, result.getName() + " test is started");
