@@ -56,7 +56,7 @@ public class DealsPageTest extends BaseTest{
 	
 	
 	
-	
+	/*
 	@AfterMethod
 	public void tearDown(){
 		//driver.quit();
@@ -66,7 +66,7 @@ public class DealsPageTest extends BaseTest{
 		    driver.quit();
 		    driver = null;
 	}
-	
+	*/
 	
 	
 	

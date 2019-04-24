@@ -31,8 +31,6 @@ public class ContactsPageTest extends BaseTest {
 
 	@BeforeMethod
 	public void setUp(Method result) throws Exception{
-		test = extent.startTest(result.getName());////ER
-		test.log(LogStatus.INFO, result.getName() + " test Started");///////ER
 		initialization();
 		loginPage = new LoginPage();
 		testUtil = new TestUtil();
@@ -83,10 +81,9 @@ public class ContactsPageTest extends BaseTest {
 	}
 	
 
-	@AfterMethod()
+	/*@AfterMethod()
 	public void afterMethod(ITestResult result) throws IOException {
-		getresult(result);
-		//driver.quit(); quit should be in Base Test Class
-	}
+		driver.quit();
+	}*/
 	
 }

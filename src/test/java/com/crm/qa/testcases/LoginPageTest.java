@@ -9,10 +9,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.ExtentReports.ExtentTestManager;
 import com.crm.qa.base.BaseTest;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
-import com.relevantcodes.extentreports.LogStatus;
+
 
 public class LoginPageTest extends BaseTest {
 	LoginPage loginPage;
@@ -24,9 +25,9 @@ public class LoginPageTest extends BaseTest {
 	
 	
 	@BeforeMethod
-	public void setUp(Method result) {
-		test = extent.startTest(result.getName());////ER
-		test.log(LogStatus.INFO, result.getName()+ "test Started");///////ER
+	public void setUp(Method method) {
+		//ExtentReports Description
+        ExtentTestManager.startTest(method.getName(),"Login Page Test.");
 		initialization();			
 		loginPage = new LoginPage();
 	}
@@ -44,19 +45,18 @@ public class LoginPageTest extends BaseTest {
 		Assert.assertTrue(flag);
 	}
 	
-
+/*
 	@Test(priority=3)
 	public void loginTest() throws Exception{
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-	}
+	}*/
 	
 	
 	
-
+/*
 	@AfterMethod()
 	public void afterMethod(ITestResult result) throws IOException {
-		getresult(result);
-		//driver.quit(); quit should be in Base Test Class
-	}
+		driver.quit(); 
+	}*/
 	
 }

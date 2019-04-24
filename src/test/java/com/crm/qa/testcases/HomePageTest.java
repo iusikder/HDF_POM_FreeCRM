@@ -10,6 +10,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.ExtentReports.ExtentTestManager;
 import com.crm.qa.base.BaseTest;
 import com.crm.qa.pages.ContactsPage;
 import com.crm.qa.pages.HomePage;
@@ -29,9 +30,9 @@ public class HomePageTest extends BaseTest{
 	
 	
 	@BeforeMethod
-	public void setUp(Method result) throws Exception{
-		test = extent.startTest(result.getName());////ER
-		test.log(LogStatus.INFO, result.getName() + " test Started");///////ER
+	public void setUp(Method method) throws Exception{
+		  //ExtentReports Description
+        ExtentTestManager.startTest(method.getName(),"Home Page Test.");		 		
 		initialization();
 		loginPage = new LoginPage();
 		testUtil = new TestUtil();
@@ -51,18 +52,16 @@ public class HomePageTest extends BaseTest{
 		Assert.assertTrue(homePage.verifyCorrectUserName());
 	}
 	
-	@Test(priority=3)
+/*	@Test(priority=3)
 	public void verifyContactsLinkTest(){
 		testUtil.switchToFrame();
 		contactsPage = homePage.clickOnContactsLink();
-	}
+	}*/
 	
 	
-
+/*
 	@AfterMethod()
 	public void afterMethod(ITestResult result) throws IOException {
-		getresult(result);
-		//driver.quit(); quit should be in Base Test Class
-	}
-	
+		driver.quit(); 
+	}*/
 }
