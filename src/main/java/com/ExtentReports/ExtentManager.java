@@ -13,8 +13,8 @@ public class ExtentManager {
         if(extent == null){
             //Set HTML reporting file location
             String workingDir = System.getProperty("user.dir");
-            //extent = new ExtentReports(workingDir+"\\ExtentReports\\ExtentReportResults.html");
-            extent = new ExtentReports(workingDir+"\\test-output\\Extent.FreeCRM.html", false);
+            extent = new ExtentReports(workingDir+"\\ExtentReports\\ExtentReportResults.html");
+            //extent = new ExtentReports(workingDir+"\\test-output\\Extent.FreeCRM.html", false);
         }
         return extent;
     }
