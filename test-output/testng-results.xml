@@ -2,12 +2,12 @@
 <testng-results skipped="1" failed="1" ignored="0" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Free CRM Test Automation Suite" duration-ms="95915" started-at="2019-04-24T08:03:13Z" finished-at="2019-04-24T08:04:49Z">
+  <suite name="Free CRM Test Automation Suite" duration-ms="149066" started-at="2019-04-24T08:36:37Z" finished-at="2019-04-24T08:39:06Z">
     <groups>
     </groups>
-    <test name="Free CRM App Test Cases" duration-ms="95915" started-at="2019-04-24T08:03:13Z" finished-at="2019-04-24T08:04:49Z">
+    <test name="Free CRM App Test Cases" duration-ms="149066" started-at="2019-04-24T08:36:37Z" finished-at="2019-04-24T08:39:06Z">
       <class name="com.crm.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.HomePageTest@16f7c8c1]" name="setUp" is-config="true" duration-ms="19129" started-at="2019-04-24T08:03:36Z" finished-at="2019-04-24T08:03:55Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.HomePageTest@16f7c8c1]" name="setUp" is-config="true" duration-ms="47010" started-at="2019-04-24T08:37:14Z" finished-at="2019-04-24T08:38:01Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.crm.qa.testcases.HomePageTest@16f7c8c1]" name="verifyHomePageTitleTest" duration-ms="20358" started-at="2019-04-24T08:03:55Z" finished-at="2019-04-24T08:04:16Z">
+        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.crm.qa.testcases.HomePageTest@16f7c8c1]" name="verifyHomePageTitleTest" duration-ms="20140" started-at="2019-04-24T08:38:01Z" finished-at="2019-04-24T08:38:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.HomePageTest@16f7c8c1]" name="setUp" is-config="true" duration-ms="20834" started-at="2019-04-24T08:04:27Z" finished-at="2019-04-24T08:04:48Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.HomePageTest@16f7c8c1]" name="setUp" is-config="true" duration-ms="24463" started-at="2019-04-24T08:38:40Z" finished-at="2019-04-24T08:39:05Z">
           <params>
             <param index="0">
               <value>
@@ -33,17 +33,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyUserNameTest()[pri:2, instance:com.crm.qa.testcases.HomePageTest@16f7c8c1]" name="verifyUserNameTest" duration-ms="88" started-at="2019-04-24T08:04:48Z" finished-at="2019-04-24T08:04:48Z">
+        <test-method status="PASS" signature="verifyUserNameTest()[pri:2, instance:com.crm.qa.testcases.HomePageTest@16f7c8c1]" name="verifyUserNameTest" duration-ms="88" started-at="2019-04-24T08:39:05Z" finished-at="2019-04-24T08:39:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserNameTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@16f7c8c1]" name="teardown" is-config="true" duration-ms="645" started-at="2019-04-24T08:04:48Z" finished-at="2019-04-24T08:04:49Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@16f7c8c1]" name="teardown" is-config="true" duration-ms="648" started-at="2019-04-24T08:39:05Z" finished-at="2019-04-24T08:39:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.crm.qa.testcases.HomePageTest -->
       <class name="com.crm.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@24a35978]" name="setUp" is-config="true" duration-ms="12059" started-at="2019-04-24T08:03:13Z" finished-at="2019-04-24T08:03:25Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@24a35978]" name="setUp" is-config="true" duration-ms="14779" started-at="2019-04-24T08:36:37Z" finished-at="2019-04-24T08:36:51Z">
           <params>
             <param index="0">
               <value>
@@ -54,7 +54,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@24a35978]" name="loginPageTitleTest" duration-ms="45" started-at="2019-04-24T08:03:25Z" finished-at="2019-04-24T08:03:25Z">
+        <test-method status="SKIP" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@24a35978]" name="loginPageTitleTest" duration-ms="49" started-at="2019-04-24T08:36:51Z" finished-at="2019-04-24T08:36:51Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [#1 Free CRM software in the cloud for sales and service00] but found [CRMPRO - CRM software for customer relationship management, sales, and support.]]]>
@@ -99,7 +99,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@24a35978]" name="setUp" is-config="true" duration-ms="10538" started-at="2019-04-24T08:03:25Z" finished-at="2019-04-24T08:03:36Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@24a35978]" name="setUp" is-config="true" duration-ms="21976" started-at="2019-04-24T08:36:52Z" finished-at="2019-04-24T08:37:14Z">
           <params>
             <param index="0">
               <value>
@@ -110,7 +110,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@24a35978]" name="loginPageTitleTest" duration-ms="14" started-at="2019-04-24T08:03:36Z" finished-at="2019-04-24T08:03:36Z">
+        <test-method status="FAIL" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@24a35978]" name="loginPageTitleTest" duration-ms="16" started-at="2019-04-24T08:37:14Z" finished-at="2019-04-24T08:37:14Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [#1 Free CRM software in the cloud for sales and service00] but found [CRMPRO - CRM software for customer relationship management, sales, and support.]]]>
@@ -155,7 +155,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@24a35978]" name="setUp" is-config="true" duration-ms="10620" started-at="2019-04-24T08:04:16Z" finished-at="2019-04-24T08:04:26Z">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.crm.qa.testcases.LoginPageTest@24a35978]" name="setUp" is-config="true" duration-ms="18210" started-at="2019-04-24T08:38:21Z" finished-at="2019-04-24T08:38:40Z">
           <params>
             <param index="0">
               <value>
@@ -166,11 +166,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="crmLogoImgTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@24a35978]" name="crmLogoImgTest" duration-ms="61" started-at="2019-04-24T08:04:26Z" finished-at="2019-04-24T08:04:26Z">
+        <test-method status="PASS" signature="crmLogoImgTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@24a35978]" name="crmLogoImgTest" duration-ms="48" started-at="2019-04-24T08:38:40Z" finished-at="2019-04-24T08:38:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- crmLogoImgTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@24a35978]" name="teardown" is-config="true" duration-ms="669" started-at="2019-04-24T08:04:26Z" finished-at="2019-04-24T08:04:27Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@24a35978]" name="teardown" is-config="true" duration-ms="645" started-at="2019-04-24T08:38:40Z" finished-at="2019-04-24T08:38:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
