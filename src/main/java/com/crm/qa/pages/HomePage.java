@@ -60,7 +60,7 @@ public class HomePage extends BaseTest {
 	}
 	
 	public void clickOnNewContactLink(){ //Clicking on New Contact Link
-		Actions action = new Actions(driver);  //This code is to Mouse Hover on Contact Button
+		Actions action = new Actions(driver);  //This code is to Mouse Over on Contact Button
 		action.moveToElement(contactsLink).build().perform();
 		newContactLink.click();
 	}

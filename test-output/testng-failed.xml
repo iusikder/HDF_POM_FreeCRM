@@ -3,15 +3,29 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Free CRM Test Automation Suite]">
   <listeners>
     <listener class-name="com.Listener.TestListener"/>
-    <listener class-name="com.Listener.AnnotationTransformer"/>
   </listeners>
   <test thread-count="5" name="Free CRM App Test Cases(failed)">
     <classes>
+      <class name="com.crm.qa.testcases.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="verifyHomePageTitleTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.HomePageTest -->
+      <class name="com.crm.qa.testcases.ContactsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="selectMultipleContactsTest" invocation-numbers="0"/>
+          <include name="selectSingleContactsTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.ContactsPageTest -->
       <class name="com.crm.qa.testcases.LoginPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="loginPageTitleTest"/>
-          <include name="teardown"/>
+          <include name="tearDown"/>
+          <include name="loginPageTitleTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.LoginPageTest -->
     </classes>

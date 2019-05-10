@@ -39,6 +39,13 @@ public class ContactsPage extends BaseTest {
 				+ "//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']")).click();																		   
 	}
 	
+	
+	
+	
+	
+	//a[text()='"+name+"']//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']")).click();																		   
+
+	//a[text()='ABCD EFGH']//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']
 	///////////////////////////////////
 	
 	//Selecting CheckBox (Divided into two lines)

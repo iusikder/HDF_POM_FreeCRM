@@ -31,7 +31,7 @@ public class DealsPageTest extends BaseTest{
 		loginPage = new LoginPage();   //Initializatin of LoginPage
 		testUtil = new TestUtil();
 		dealsPage = new DealsPage();
-		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		homePage = (HomePage) loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		testUtil.switchToFrame();
 		dealsPage = homePage.clickOnDealsLink();			
 	}
